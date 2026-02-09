@@ -1,0 +1,31 @@
+---
+import Navegacio from "../components/Navegacio.astro";
+import Peu from "../components/Peu.astro";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Ferrer</title>
+</head>
+<body class="flex flex-col p-10 bg-linear-to-br from-white to-blue-100">
+    <div class="flex flex-col justify-self-center md:2/5 lg:w-3/5">
+        <header>
+            <Navegacio/>
+        </header>
+
+        <main>
+            <slot>
+                
+            </slot>
+        </main>
+
+        <footer>
+            <Peu/>
+        </footer>
+    </div>
+</body>
+</html>

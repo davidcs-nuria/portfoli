@@ -1,0 +1,11 @@
+---
+interface Props {
+    text: string;
+    link?: string;
+}
+
+const {text="Sample",link="/"} = Astro.props;
+---
+<a href={link} class=""><div class="flex w-60 mt-5 m-3 text-white bg-black border-none rounded-full p-3">
+    {text}
+</div></a>

@@ -1,0 +1,31 @@
+{
+    "piny.project_settings": {
+        "open-pages": [
+            "pinyfakepage.html"
+        ],
+        "component-settings": {
+            "src/components/Peu.astro:::Temp": {
+                "route": "/informacio"
+            }
+        },
+        "urls": {
+            "pinyfakepage.html": {
+                "open-page-views": [
+                    {
+                        "w": 660,
+                        "h": 0
+                    }
+                ]
+            }
+        },
+        "app-routes": {
+            "routes": [
+                "/",
+                "/contacte",
+                "/escrits",
+                "/informacio"
+            ],
+            "current_route": "/informacio"
+        }
+    }
+}

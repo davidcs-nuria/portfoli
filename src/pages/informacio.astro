@@ -1,0 +1,25 @@
+---
+import Titol from "../components/Titol.astro";
+import Layout from "../layouts/Layout.astro"
+import cvData from "../data/cv.json";
+let i = 0;
+---
+
+<Layout>
+    <Titol text="Informacio"/>
+    <div class="m-5">
+        <p>{cvData.profile_summary}</p>
+        <br>
+        <h2 class="font-bold mb-3">Experiencia</h2>
+        <ul>
+        {cvData.experience.map((candidate => (
+            <li>
+                <p>{candidate.company}</p>
+                <p class="text-sm mb-2">{candidate.position}</p>
+                <p class="text-xs">{candidate.duration}</p>
+                <br/>
+            </li>
+            )))}
+        </ul>
+    </div>
+</Layout>
