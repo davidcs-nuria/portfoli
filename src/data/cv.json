@@ -72,25 +72,25 @@
             "name": "TaskManager App",
             "description": "Aplicació de gestió de tasques amb React i Firebase.",
             "url": "https://taskmanager.dev",
-            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
+            "image": "/img/sample1.jpg"
         },
         {
             "name": "E-commerce Platform",
             "description": "Plataforma de comerç electrònic desenvolupada amb Vue.js i Node.js.",
             "url": "https://ecommerce.example.com",
-            "image": "https://images.pexels.com/photos/2265482/pexels-photo-2265482.jpeg"
+            "image": "/img/sample2.jpg"
         },
         {
             "name": "Blog CMS",
             "description": "Sistema de gestió de continguts per blogs amb Astro i Markdown.",
             "url": "https://blogcms.dev",
-            "image": "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg"
+            "image": "/img/sample3.jpg"
         },
         {
             "name": "Fitness Tracker",
             "description": "Aplicació per monitoritzar entrenaments i progrés físic.",
             "url": "https://fitnesstracker.dev",
-            "image": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg"
+            "image": "/img/sample4.png"
         }
     ],
     "blog_posts": [{

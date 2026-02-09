@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+    text: string;
+    image: string;
+}
+
+const {text="Sample",image="/"} = Astro.props;
+---
+
+<div class="p-10 flex flex-col gap-5 justify-center backdrop-blur-md rounded-md border-solid">
+    <Image
+        src={image}
+        alt="Per omplir"
+        width={600}
+        height={100}
+        class="h-70 object-cover"
+    />
+    <hr>
+    <p>{text}</p>
+</div>

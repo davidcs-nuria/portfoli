@@ -1,15 +1,16 @@
 ---
 import cvData from "../data/cv.json";
 import Boto from "../components/Boto.astro";
+import Card from "../components/Card.astro";
 import Separador from "../components/Separador.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
     <section>
-        <h1 class="text-2xl">Hola, soc {cvData.name}.</h1>
-        <p class="text-xl mb-3">{cvData.title}</p>
-        <p>I work with leading-edge companies to create exceptional products. I most recently worked with MoonPay to help make web3 accessible. Before that, I built personal and business banking products for millions of customers at Monzo.</p>
+        <h1 class="text-2xl font-bold text-blue-400">Hola, soc {cvData.name}.</h1>
+        <p class="text-xl mb-3 text-blue-300">{cvData.title}</p>
+        <p class="text-blue-200">I work with leading-edge companies to create exceptional products. I most recently worked with MoonPay to help make web3 accessible. Before that, I built personal and business banking products for millions of customers at Monzo.</p>
         
         <Boto 
             text="Mes informació",
@@ -20,10 +21,17 @@ import Layout from "../layouts/Layout.astro";
     <Separador/>
 
     <section>
-
+        <div class="grid grid-cols-2 gap-4">
+            {cvData.projects.map(product => (
+                <Card
+                    text={product.name}
+                    image={product.image}/>
+            ))}
+        </div>
+        <Boto 
+            text="Veure projectes antics",
+            link="antics"
+        />
     </section>
-    <Boto 
-        text="Veure projectes antics",
-        link="antics"
-    />
+    
 </Layout>
