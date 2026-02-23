@@ -6,6 +6,6 @@ interface Props {
 
 const {text="Sample",link="/"} = Astro.props;
 ---
-<a href={link} class=""><div class="flex w-60 mt-5 m-3 text-white bg-black border-none rounded-full p-3">
-    {text}
+<a href={link} class=""><div class="flex w-60 mt-5 m-3 text-white items-center bg-black border-none rounded-full p-3">
+    {text} &nbsp <div class="flex w-8 justify-start hover:justify-end"><i class="fa-solid fa-arrow-right"></i></div>
 </div></a>

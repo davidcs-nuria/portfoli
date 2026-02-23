@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+
+import cvData from "../data/cv.json";
+import Boto from "../components/Boto.astro";
+import Separador from "../components/Separador.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <h1 class="font-bold text-2xl text-blue-400">{cvData.projects[1].name}</h1><br>
+    <Image
+        src={cvData.projects[1].image}
+        alt="Per omplir"
+        width={9000}
+        height={500}
+        class="h-70 object-cover rounded-3xl"
+    />
+
+    <Separador/>
+
+    <p>{cvData.projects[1].description}</p>
+    <Boto text="Web del projecte" link={cvData.projects[1].url}/>
+</Layout>

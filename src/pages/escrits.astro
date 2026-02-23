@@ -1,8 +1,19 @@
 ---
+import cvData from "../data/cv.json";
 import Titol from "../components/Titol.astro";
+import PostCard from "../components/PostCard.astro";
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
     <Titol text="Escriptura"/>
+
+    <div class="flex flex-col gap-5 m-3">
+        {cvData.blog_posts.map(post => (
+        <PostCard 
+            title={post.title}
+            summary={post.summary}
+            date={post.date}/>
+        ))}
+    </div>
 </Layout>

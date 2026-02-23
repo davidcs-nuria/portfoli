@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
     <section>
         <h1 class="text-2xl font-bold text-blue-400">Hola, soc {cvData.name}.</h1>
         <p class="text-xl mb-3 text-blue-300">{cvData.title}</p>
-        <p class="text-blue-200">I work with leading-edge companies to create exceptional products. I most recently worked with MoonPay to help make web3 accessible. Before that, I built personal and business banking products for millions of customers at Monzo.</p>
+        <p class="text-gray-500">I work with leading-edge companies to create exceptional products. I most recently worked with MoonPay to help make web3 accessible. Before that, I built personal and business banking products for millions of customers at Monzo.</p>
         
         <Boto 
             text="Mes informació",
@@ -25,7 +25,8 @@ import Layout from "../layouts/Layout.astro";
             {cvData.projects.map(product => (
                 <Card
                     text={product.name}
-                    image={product.image}/>
+                    image={product.image}
+                    redirect={product.id}/>
             ))}
         </div>
         <Boto 

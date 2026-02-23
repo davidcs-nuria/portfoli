@@ -1,8 +1,40 @@
 ---
+import cvData from "../data/cv.json";
+import Boto from "../components/Boto.astro";
 import Titol from "../components/Titol.astro";
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
     <Titol text="Contacte"/>
+    <div class="m-3 flex flex-wrap justify-evenly gap-10">
+        <div class="flex flex-col items-center">
+            <p><i class="fa-solid fa-envelope"/></p>
+            <p class="font-bold">E-Mail</p>
+            <p>{cvData.contact.email}</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <p><i class="fa-solid fa-phone"/></p>
+            <p class="font-bold">Teléfon</p>
+            <p>{cvData.contact.phone}</p>
+        </div>
+        <div class="flex flex-col items-center w-full">
+            <p><i class="fa-solid fa-location-dot"/></p>
+            <p class="font-bold">Localització</p>
+            <p>{cvData.contact.location}</p>
+        </div>
+    </div>
+
+    <div class="m-3 mt-10 flex flex-col justify-center gap-10">
+        <div class="flex flex-row justify-center gap-10">
+            <a href={cvData.contact.github}><i class="fa-brands fa-github fa-2x"></i></a>
+            <p> | </p>
+            <a href={cvData.contact.linkedin}><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="flex flex-row justify-center">
+            <Boto
+            text="Veure la meva web...",
+            link={cvData.contact.website}/>
+        </div>
+    </div>
 </Layout>

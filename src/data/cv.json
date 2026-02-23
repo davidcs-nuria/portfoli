@@ -69,24 +69,28 @@
         { "language": "Anglès", "level": "Avançat" }
     ],
     "projects": [{
+            "id": "PR1",
             "name": "TaskManager App",
             "description": "Aplicació de gestió de tasques amb React i Firebase.",
             "url": "https://taskmanager.dev",
             "image": "/img/sample1.jpg"
         },
         {
+            "id": "PR2",
             "name": "E-commerce Platform",
             "description": "Plataforma de comerç electrònic desenvolupada amb Vue.js i Node.js.",
             "url": "https://ecommerce.example.com",
             "image": "/img/sample2.jpg"
         },
         {
+            "id": "PR3",
             "name": "Blog CMS",
             "description": "Sistema de gestió de continguts per blogs amb Astro i Markdown.",
             "url": "https://blogcms.dev",
             "image": "/img/sample3.jpg"
         },
         {
+            "id": "PR4",
             "name": "Fitness Tracker",
             "description": "Aplicació per monitoritzar entrenaments i progrés físic.",
             "url": "https://fitnesstracker.dev",
@@ -94,11 +98,13 @@
         }
     ],
     "blog_posts": [{
+            "id": "BL1",
             "title": "Optimització de React: Com millorar el rendiment de la teva aplicació",
             "summary": "Explorem tècniques com memoization, lazy loading i code splitting per optimitzar aplicacions React.",
             "date": "15-02-2024"
         },
         {
+            "id": "BL2",
             "title": "Node.js i Express: Bones pràctiques per al desenvolupament d'APIs",
             "summary": "Guia completa per estructurar projectes Node.js de manera escalable i eficient.",
             "date": "20-01-2024"

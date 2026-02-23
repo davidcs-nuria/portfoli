@@ -4,19 +4,20 @@ import { Image } from 'astro:assets';
 interface Props {
     text: string;
     image: string;
+    redirect: string;
 }
 
-const {text="Sample",image="/"} = Astro.props;
+const {text="Sample",image="/",redirect="/"} = Astro.props;
 ---
 
-<div class="p-10 flex flex-col gap-5 justify-center backdrop-blur-md rounded-md border-solid">
+<a class="m-2 flex flex-col gap-5 justify-center backdrop-blur-md rounded-md border-solid text-gray-800 hover:text-blue-800" href={redirect}>
     <Image
         src={image}
         alt="Per omplir"
-        width={600}
-        height={100}
-        class="h-70 object-cover"
+        width={1000}
+        height={500}
+        class="h-70 object-cover rounded-3xl max-[1024px]:h-40"
     />
     <hr>
-    <p>{text}</p>
-</div>
+    <p class="font-bold ">{text}</p>
+</a>

@@ -1,0 +1,17 @@
+---
+import cvData from "../data/cv.json";
+
+interface Props {
+    title: string;
+    summary: string;
+    date: string;
+}
+const {title="Sample", summary="lorem ipsum", date="00-00-0000"} = Astro.props;
+---
+
+<div>
+    <h1 class="m-2 font-bold">{title}</h1>
+    <hr class="m-3">
+    <p class="m-2 text-gray-600">{summary}</p>
+    <p class="m-2 mt-1 text-xs text-gray-500">{date}</p>
+</div>
